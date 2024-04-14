@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <link rel="stylesheet"href="https://pyscript.net/latest/pscript.css" />
+	    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+	    <style>
+		label{
+		     display:block;
+		}
+	  </style>
+	</head>
+	<body>
+	   <form>
+		<labelfor="operandOne">x:</label><inputname="operandOne" id="operandOne" value="10">
+		<labelfor="total">Result:</label><divname="total"></div>
+		</form>
+		<py-script>
+		input_box = Element("operandOne")
+		operandOne = float(input_box.value)
+		result = Element("total")
+		result.write("Hello!Theinputsays:"+str(operandOne))
+		</py-script>
+	   </body>
+	</html>
